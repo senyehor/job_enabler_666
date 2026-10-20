@@ -1,0 +1,54 @@
+{
+  "id": "L0023",
+  "slug": "dict-counting",
+  "title": "Counting things with dictionaries",
+  "week": 2,
+  "kind": "regular",
+  "concepts": {
+    "new": ["ds.dicts"],
+    "practiced": ["py.for", "ds.strings", "fn.basics"]
+  },
+  "scaffold": {
+    "level": 1,
+    "provided": ["file skeleton", "sample input file"],
+    "reason": "File reading is not taught yet, so the input loading is provided; everything else is written by hand."
+  },
+  "estimate_min": 65,
+  "git_mode": "tutor",
+  "state": "in_review",
+  "check_questions": [
+    { "q": "What does d.get('x', 0) return when 'x' is missing?", "answered_ok": true },
+    { "q": "Can a list be a dict key? Why?", "answered_ok": false, "note": "Re-explained hashability briefly" }
+  ],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-11-03T18:42:10+02:00",
+      "verdict": "changes_requested",
+      "tests": { "passed": 4, "failed": 2 },
+      "issues": [
+        { "concept": "ds.dicts", "type": "logic", "severity": "major", "note": "Overwrites the count instead of incrementing it" },
+        { "concept": "ds.strings", "type": "edge-case", "severity": "minor", "note": "Doesn't lowercase words, so 'The' and 'the' are counted separately" }
+      ]
+    },
+    {
+      "round": 2,
+      "at": "2026-11-03T18:58:31+02:00",
+      "verdict": "approved",
+      "tests": { "passed": 6, "failed": 0 },
+      "issues": [
+        { "concept": "fn.docs", "type": "style", "severity": "nit", "note": "Variable name 'x' could be 'word'" }
+      ]
+    }
+  ],
+  "events": [
+    { "at": "2026-11-03T17:50:02+02:00", "type": "planned", "by": "planner" },
+    { "at": "2026-11-03T17:50:02+02:00", "type": "started" },
+    { "at": "2026-11-03T17:50:02+02:00", "type": "break_override", "reason": "Only took 10 min, felt fresh" },
+    { "at": "2026-11-03T18:05:40+02:00", "type": "theory_done" },
+    { "at": "2026-11-03T18:09:12+02:00", "type": "check_done" },
+    { "at": "2026-11-03T18:09:30+02:00", "type": "task_setup" },
+    { "at": "2026-11-03T18:42:10+02:00", "type": "review", "round": 1 },
+    { "at": "2026-11-03T18:58:31+02:00", "type": "review", "round": 2 }
+  ]
+}

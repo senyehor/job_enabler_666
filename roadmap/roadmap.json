@@ -1,0 +1,241 @@
+{
+  "goal": "Junior Python backend developer, starting from zero",
+  "pace": { "lessons_per_day": 3, "lessons_per_week": 15, "lesson_minutes": [60, 75], "break_minutes": 15 },
+  "notes": [
+    "Module order implies prerequisites. A concept may only rely on concepts from earlier modules or earlier in its own module.",
+    "est_lessons counts regular lessons only; the planner adds review lessons (~1 in 5) and the module project on top.",
+    "Concept ids are stable keys used by lesson.json and mastery tracking; never rename, only deprecate."
+  ],
+  "modules": [
+    {
+      "id": "m00",
+      "title": "Setup and the computer",
+      "goal": "Can open a terminal, move around the file system, and run a Python file.",
+      "est_lessons": 3,
+      "concepts": [
+        { "id": "env.install", "title": "Installing Python, VS Code, Git", "outcomes": ["Knows what Python, VS Code, Git and Claude Code each do (installed beforehand, see README)", "Verifies each one from the terminal and opens the course folder in VS Code"] },
+        { "id": "env.terminal", "title": "Terminal basics", "outcomes": ["Uses pwd, ls, cd, mkdir, cat, rm without help", "Understands absolute vs relative paths"] },
+        { "id": "env.run", "title": "What a program is; running a script", "outcomes": ["Writes a .py file and runs it with python", "Reads a basic error message and finds the line"] }
+      ],
+      "project": null
+    },
+    {
+      "id": "m01",
+      "title": "Python fundamentals",
+      "goal": "Writes small programs with variables, conditions and loops.",
+      "est_lessons": 12,
+      "concepts": [
+        { "id": "py.values", "title": "Values and types (int, float, str, bool)", "outcomes": ["Predicts the type of an expression", "Converts between types"] },
+        { "id": "py.variables", "title": "Variables and assignment", "outcomes": ["Traces variable values through a script by hand"] },
+        { "id": "py.arithmetic", "title": "Arithmetic and operators", "outcomes": ["Uses //, %, ** correctly", "Knows operator precedence"] },
+        { "id": "py.strings-basic", "title": "Strings, f-strings, indexing, slicing", "outcomes": ["Formats output with f-strings", "Slices strings"] },
+        { "id": "py.io", "title": "print and input", "outcomes": ["Builds a program that asks for input and responds"] },
+        { "id": "py.conditions", "title": "Booleans, comparisons, if/elif/else", "outcomes": ["Writes nested and chained conditions", "Uses and/or/not"] },
+        { "id": "py.while", "title": "while loops", "outcomes": ["Writes loops with a clear exit condition", "Spots infinite loops"] },
+        { "id": "py.for", "title": "for loops and range", "outcomes": ["Iterates over ranges and strings", "Avoids off-by-one errors"] },
+        { "id": "py.lists-basic", "title": "Lists basics", "outcomes": ["Creates, indexes, appends to and loops over lists"] },
+        { "id": "py.debugging", "title": "Reading tracebacks and debugging", "outcomes": ["Reads a traceback bottom-up", "Uses print debugging and the VS Code debugger"] }
+      ],
+      "project": "Number-guessing game with score tracking"
+    },
+    {
+      "id": "m02",
+      "title": "Data structures",
+      "goal": "Picks the right built-in structure and changes data confidently.",
+      "est_lessons": 8,
+      "concepts": [
+        { "id": "ds.lists", "title": "Lists in depth (methods, mutation, copying)", "outcomes": ["Knows aliasing vs copying", "Uses sort, sorted, slicing assignment"] },
+        { "id": "ds.tuples", "title": "Tuples and unpacking", "outcomes": ["Unpacks tuples and uses them as fixed records"] },
+        { "id": "ds.dicts", "title": "Dictionaries", "outcomes": ["Counts, groups and looks up with dicts", "Uses get, items, setdefault"] },
+        { "id": "ds.sets", "title": "Sets", "outcomes": ["Uses sets for membership and de-duplication"] },
+        { "id": "ds.strings", "title": "String methods", "outcomes": ["Uses split, join, strip, replace and find to parse text"] },
+        { "id": "ds.comprehensions", "title": "Comprehensions", "outcomes": ["Writes list and dict comprehensions, knows when not to"] },
+        { "id": "ds.nested", "title": "Nested structures", "outcomes": ["Walks a list of dicts and a dict of lists"] }
+      ],
+      "project": "Contact book in the terminal (data kept in memory)"
+    },
+    {
+      "id": "m03",
+      "title": "Functions",
+      "goal": "Breaks problems into small, reusable functions.",
+      "est_lessons": 8,
+      "concepts": [
+        { "id": "fn.basics", "title": "Defining and calling functions", "outcomes": ["Writes functions with parameters and return values", "Knows the difference between return and print"] },
+        { "id": "fn.scope", "title": "Scope", "outcomes": ["Explains local vs global", "Avoids changing globals"] },
+        { "id": "fn.args", "title": "Default, keyword, *args, **kwargs", "outcomes": ["Uses default and keyword arguments", "Knows the mutable-default trap"] },
+        { "id": "fn.decomposition", "title": "Problem decomposition", "outcomes": ["Splits a task into functions before coding"] },
+        { "id": "fn.docs", "title": "Docstrings and naming", "outcomes": ["Writes clear names and one-line docstrings"] },
+        { "id": "fn.recursion", "title": "Recursion intro", "outcomes": ["Writes a base case and a recursive case"] },
+        { "id": "fn.first-class", "title": "Functions as values, lambda", "outcomes": ["Passes functions to sorted/map/filter"] }
+      ],
+      "project": "Text adventure or quiz engine built from functions"
+    },
+    {
+      "id": "m04",
+      "title": "Git",
+      "goal": "Owns his own git workflow; the tutor stops making commits for him.",
+      "est_lessons": 4,
+      "concepts": [
+        { "id": "git.why", "title": "Version control concepts", "outcomes": ["Explains working tree, staging and commit"] },
+        { "id": "git.basics", "title": "add, commit, status, log, diff", "outcomes": ["Makes clean, well-described commits"] },
+        { "id": "git.branches", "title": "Branches and merging", "outcomes": ["Creates a branch, merges it, resolves a simple conflict"] },
+        { "id": "git.remote", "title": "Remotes, push and pull", "outcomes": ["Pushes to GitHub and pulls updates"] }
+      ],
+      "project": null,
+      "on_complete": { "git_mode": "student" }
+    },
+    {
+      "id": "m05",
+      "title": "Errors, files and modules",
+      "goal": "Writes programs that handle bad input, save data, and span several files.",
+      "est_lessons": 8,
+      "concepts": [
+        { "id": "io.exceptions", "title": "Exceptions, try/except/else/finally", "outcomes": ["Catches specific exceptions", "Never uses a bare except"] },
+        { "id": "io.raise", "title": "Raising and custom exceptions", "outcomes": ["Raises meaningful errors from his own functions"] },
+        { "id": "io.files", "title": "Reading and writing files, with", "outcomes": ["Reads and writes text files safely"] },
+        { "id": "io.formats", "title": "JSON and CSV", "outcomes": ["Saves and loads structured data as JSON/CSV"] },
+        { "id": "io.pathlib", "title": "pathlib", "outcomes": ["Builds paths that work on any OS"] },
+        { "id": "io.modules", "title": "Modules, imports, __name__", "outcomes": ["Splits a program into modules", "Uses if __name__ == '__main__'"] },
+        { "id": "io.stdlib", "title": "Standard library tour", "outcomes": ["Uses datetime, random, collections, itertools when they fit"] }
+      ],
+      "project": "Personal expense tracker that keeps its data in JSON"
+    },
+    {
+      "id": "m06",
+      "title": "Testing",
+      "goal": "Writes tests for his own code by default.",
+      "est_lessons": 5,
+      "concepts": [
+        { "id": "test.why", "title": "Why test; assert", "outcomes": ["Writes assert-based checks"] },
+        { "id": "test.pytest", "title": "pytest basics", "outcomes": ["Writes and runs pytest tests, reads failures"] },
+        { "id": "test.design", "title": "What to test: edge cases", "outcomes": ["Lists edge cases before writing code"] },
+        { "id": "test.fixtures", "title": "Fixtures and parametrize", "outcomes": ["Uses fixtures and parametrize to avoid duplication"] },
+        { "id": "test.tdd", "title": "Test-first workflow", "outcomes": ["Completes a small feature test-first"] }
+      ],
+      "project": "Add a test suite to the expense tracker"
+    },
+    {
+      "id": "m07",
+      "title": "Object-oriented programming and types",
+      "goal": "Models a domain with classes and type hints.",
+      "est_lessons": 10,
+      "concepts": [
+        { "id": "oop.classes", "title": "Classes, instances, __init__", "outcomes": ["Defines a class with attributes and methods"] },
+        { "id": "oop.methods", "title": "Methods, self, class vs instance attributes", "outcomes": ["Knows when state belongs to the instance or the class"] },
+        { "id": "oop.dunder", "title": "Special methods (__repr__, __eq__, ...)", "outcomes": ["Makes objects print and compare sensibly"] },
+        { "id": "oop.inheritance", "title": "Inheritance and super", "outcomes": ["Uses inheritance for a real is-a relationship"] },
+        { "id": "oop.composition", "title": "Composition over inheritance", "outcomes": ["Prefers composition and can say why"] },
+        { "id": "oop.dataclasses", "title": "dataclasses", "outcomes": ["Replaces boilerplate classes with dataclasses"] },
+        { "id": "oop.typing", "title": "Type hints and mypy basics", "outcomes": ["Adds type hints to functions and classes and checks them"] },
+        { "id": "oop.encapsulation", "title": "Encapsulation and properties", "outcomes": ["Uses properties and private-by-convention fields"] }
+      ],
+      "project": "Library or inventory system with classes and tests"
+    },
+    {
+      "id": "m08",
+      "title": "Tooling and project structure",
+      "goal": "Sets up a real Python project from scratch.",
+      "est_lessons": 5,
+      "concepts": [
+        { "id": "tool.venv", "title": "Virtual environments", "outcomes": ["Creates and uses a virtual environment per project"] },
+        { "id": "tool.deps", "title": "Dependencies with uv / pip", "outcomes": ["Adds, pins and installs dependencies"] },
+        { "id": "tool.layout", "title": "Project layout, pyproject.toml", "outcomes": ["Creates a src-layout project with pyproject.toml"] },
+        { "id": "tool.quality", "title": "Formatting and linting (ruff)", "outcomes": ["Runs ruff format and ruff check before committing"] },
+        { "id": "tool.cli", "title": "Command-line apps with argparse", "outcomes": ["Builds a CLI with subcommands"] }
+      ],
+      "project": "Turn the expense tracker into a packaged CLI tool"
+    },
+    {
+      "id": "m09",
+      "title": "Algorithms and complexity",
+      "goal": "Can reason about efficiency and solve typical interview-style problems.",
+      "est_lessons": 8,
+      "concepts": [
+        { "id": "algo.bigo", "title": "Big-O intuition", "outcomes": ["Estimates the complexity of his own loops"] },
+        { "id": "algo.search", "title": "Linear and binary search", "outcomes": ["Implements binary search correctly"] },
+        { "id": "algo.sort", "title": "Sorting algorithms", "outcomes": ["Implements one O(n^2) and one O(n log n) sort"] },
+        { "id": "algo.stack-queue", "title": "Stacks and queues", "outcomes": ["Solves problems with a stack or deque"] },
+        { "id": "algo.hashing", "title": "Hash maps for problem solving", "outcomes": ["Turns O(n^2) lookups into O(n) using dicts/sets"] },
+        { "id": "algo.patterns", "title": "Two pointers, sliding window", "outcomes": ["Recognises and applies the two common patterns"] }
+      ],
+      "project": null
+    },
+    {
+      "id": "m10",
+      "title": "How the web works",
+      "goal": "Understands HTTP well enough to build and debug APIs.",
+      "est_lessons": 5,
+      "concepts": [
+        { "id": "web.http", "title": "HTTP: requests, responses, methods, status codes", "outcomes": ["Reads a raw HTTP exchange"] },
+        { "id": "web.client-server", "title": "Client/server, DNS, ports", "outcomes": ["Explains what happens when you open a URL"] },
+        { "id": "web.json-apis", "title": "JSON APIs and REST conventions", "outcomes": ["Designs resource URLs and methods"] },
+        { "id": "web.clients", "title": "curl and httpx/requests", "outcomes": ["Calls a public API from the terminal and from Python"] }
+      ],
+      "project": "CLI that pulls data from a public API and saves it"
+    },
+    {
+      "id": "m11",
+      "title": "SQL and databases",
+      "goal": "Designs a schema and queries it from Python.",
+      "est_lessons": 10,
+      "concepts": [
+        { "id": "sql.relational", "title": "Relational model, tables, keys", "outcomes": ["Explains primary and foreign keys"] },
+        { "id": "sql.select", "title": "SELECT, WHERE, ORDER BY, LIMIT", "outcomes": ["Writes filtering and sorting queries"] },
+        { "id": "sql.modify", "title": "INSERT, UPDATE, DELETE", "outcomes": ["Changes data safely"] },
+        { "id": "sql.joins", "title": "JOINs", "outcomes": ["Uses inner and left joins correctly"] },
+        { "id": "sql.aggregates", "title": "GROUP BY and aggregates", "outcomes": ["Writes reporting queries"] },
+        { "id": "sql.design", "title": "Schema design and normalisation", "outcomes": ["Designs a 3–5 table schema for a domain"] },
+        { "id": "sql.indexes-tx", "title": "Indexes and transactions", "outcomes": ["Knows when to add an index and why transactions matter"] },
+        { "id": "sql.python", "title": "sqlite3 from Python, parameterised queries", "outcomes": ["Never builds SQL by joining strings"] },
+        { "id": "sql.orm", "title": "SQLAlchemy intro", "outcomes": ["Maps tables to models and queries with the ORM"] }
+      ],
+      "project": "Move the expense tracker's storage from JSON to SQLite"
+    },
+    {
+      "id": "m12",
+      "title": "Backend with FastAPI",
+      "goal": "Builds a tested CRUD API backed by a database.",
+      "est_lessons": 12,
+      "concepts": [
+        { "id": "api.fastapi", "title": "FastAPI basics, routing", "outcomes": ["Serves endpoints and explores them in /docs"] },
+        { "id": "api.pydantic", "title": "Request/response models with Pydantic", "outcomes": ["Validates input with models"] },
+        { "id": "api.crud", "title": "CRUD endpoints", "outcomes": ["Implements create/read/update/delete with correct status codes"] },
+        { "id": "api.db", "title": "Database integration, dependencies", "outcomes": ["Uses dependency injection for DB sessions"] },
+        { "id": "api.errors", "title": "Error handling and validation errors", "outcomes": ["Returns consistent error responses"] },
+        { "id": "api.auth", "title": "Authentication (password hashing, JWT)", "outcomes": ["Protects endpoints behind login"] },
+        { "id": "api.testing", "title": "Testing APIs", "outcomes": ["Tests endpoints with TestClient and a test DB"] },
+        { "id": "api.async", "title": "async/await basics", "outcomes": ["Knows when async helps and when it doesn't"] },
+        { "id": "api.migrations", "title": "Migrations with Alembic", "outcomes": ["Changes the schema through migrations"] }
+      ],
+      "project": "Task-manager REST API with auth and tests"
+    },
+    {
+      "id": "m13",
+      "title": "Production basics",
+      "goal": "Ships a service: configured, containerised, deployed, with CI.",
+      "est_lessons": 8,
+      "concepts": [
+        { "id": "prod.config", "title": "Configuration and secrets (env vars)", "outcomes": ["Keeps secrets out of git"] },
+        { "id": "prod.logging", "title": "Logging", "outcomes": ["Uses the logging module instead of print"] },
+        { "id": "prod.postgres", "title": "PostgreSQL", "outcomes": ["Runs the API against Postgres"] },
+        { "id": "prod.docker", "title": "Docker and docker compose", "outcomes": ["Containerises the API and the database"] },
+        { "id": "prod.ci", "title": "CI with GitHub Actions", "outcomes": ["Runs lint and tests on every push"] },
+        { "id": "prod.deploy", "title": "Deployment", "outcomes": ["Deploys the API to a cheap or free host"] }
+      ],
+      "project": "Deploy the task-manager API with CI"
+    },
+    {
+      "id": "m14",
+      "title": "Capstone and job prep",
+      "goal": "A portfolio project he can talk about, plus interview readiness.",
+      "est_lessons": 20,
+      "concepts": [
+        { "id": "cap.project", "title": "Capstone: design, build, deploy his own idea", "outcomes": ["Ships a project from spec to deployment on his own"] },
+        { "id": "job.interview-coding", "title": "Live-coding practice", "outcomes": ["Solves easy/medium problems while explaining out loud"] },
+        { "id": "job.system-basics", "title": "Talking about backend design", "outcomes": ["Explains his capstone architecture and trade-offs"] },
+        { "id": "job.portfolio", "title": "GitHub profile, README, CV", "outcomes": ["Has a clean GitHub profile and CV"] }
+      ],
+      "project": "Capstone"
+    }
+  ]
+}
