@@ -15,7 +15,8 @@ A Claude Code-driven programming course: one learner, one maintainer, one shared
 | Break | Soft: `next` warns, learner can override with a reason, which is logged |
 | Theory | Planner writes an outline; tutor writes the full theory at `/next` |
 | Storage | One `lesson.json` per lesson, written only by `tools/learn.py`; no global DB |
-| Reference solutions | Never committed. The lesson builder solves each task in `.scratch/` (gitignored) to check it, then deletes the solution |
+| Reference solutions | None. To save tokens, builders don't solve their own tasks. `validate` checks that the tests fail on the starter, and the reviewer flags broken tests during the lesson, logging them to `MAINTAINER_NOTES.md` |
+| Models | Planner and lesson builder run on Sonnet (`model:` in their agent files). Tutor and reviewer use the session's model |
 | Lesson tests | Python's built-in `unittest` plus `tools/lessonkit.py`, so nothing needs installing |
 
 ## Roles
@@ -23,7 +24,7 @@ A Claude Code-driven programming course: one learner, one maintainer, one shared
 - **Tutor**: the main Claude Code session, ruled by `CLAUDE.md`. Runs `/next`, `/review`, `/done`.
 - **Reviewer** (subagent): reads and runs the learner's code, writes the review, gives hints step by step. Can't edit `work/`.
 - **Planner** (subagent, via `/plan-week`): turns the roadmap plus progress data into the next 15 lessons. Writes `plans/week-NN.md` and scaffolds each lesson folder.
-- **Lesson builder** (subagent, one per lesson, up to 5 in parallel): writes the outline, task, rubric, tests and starter for one lesson, then checks it by solving it.
+- **Lesson builder** (subagent, one per lesson, up to 5 in parallel): writes the outline, task, rubric, tests and starter for one lesson, then checks the tests against the task text.
 - **Learner**: writes everything under `lessons/*/work/`, and the takeaways (which the tutor saves).
 - **Maintainer**: owns `roadmap/`, runs `/plan-week`, reads `/status`.
 

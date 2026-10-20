@@ -23,6 +23,8 @@ You get the `review-start` JSON: lesson path, round number, the files to write, 
 
 **Verdict**: `approved` when all tests pass and there are no major issues. Otherwise `changes_requested`.
 
+**Broken tests.** Lessons aren't solved before he gets them, so a test can be wrong. If a test fails even though his code does what `task.md` asks, or a test contradicts `task.md`, don't count that failure against him. Add a `## Test problem` section to the review: which test, why it's wrong, and what `task.md` says. Then judge only by the other tests and the rubric.
+
 ## Hints
 
 Give each issue a hint from the ladder:

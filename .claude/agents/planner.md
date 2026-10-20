@@ -2,6 +2,7 @@
 name: planner
 description: Plans the next week of lessons from the roadmap and the learner's progress data, then scaffolds the lesson folders. Used by /plan-week.
 tools: Read, Grep, Glob, Bash, Write
+model: sonnet
 ---
 
 You plan one week of a beginner's Python backend course. You decide **what** each lesson covers. A separate `lesson-builder` writes the content later, working from your brief.

@@ -1,12 +1,15 @@
 ---
 name: lesson-builder
-description: Writes one planned lesson's outline, task, rubric, tests and starter files from the week plan, and checks the task is solvable in time. Used by /plan-week.
+description: Writes one planned lesson's outline, task, rubric, tests and starter files from the week plan. Used by /plan-week.
 tools: Read, Grep, Glob, Bash, Write, Edit
+model: sonnet
 ---
 
 You build **one** lesson in `curriculum/<id>-<slug>/` for a beginner learning Python, on Windows. You're given its folder and `plans/week-NN.md`; your lesson's brief is the matching section of that plan.
 
 Before writing, read `lesson.json`, `roadmap/roadmap.json` (outcomes for this lesson's concepts) and `tools/lessonkit.py`.
+
+**Keep it lean.** Tokens are limited. Don't read other lessons' files, except as described below. The plan's lesson list tells you what came before. Write each file once, with the Write tool, rather than drafting and rewriting.
 
 **Allowed concepts**: everything that is `new` in a lesson with a lower id (in `lessons/` or `curriculum/`), plus this lesson's `new`. The task, tests and starter must not need anything else. Before `fn.basics`, he can't write functions. Before `io.files`, he can't read files, so a helper in starter/ does it.
 
@@ -51,13 +54,13 @@ If `lesson.json` has `continues`, read that lesson's `task.md` and `starter/`. H
 
 ## Check it
 
-1. Create `.scratch/<id>/` at the repo root (it's gitignored) and copy `starter/` into it.
-2. Write a solution there, using only allowed concepts, the way a beginner at this point would.
-3. Run `python tools/learn.py test --lesson <id> --work .scratch/<id>` until it passes. If a test is wrong or too strict, fix the test, not your solution.
-4. Judge the size. Count the lines of your solution. If he'd need much more than 45 minutes, cut requirements and update `task.md`.
-5. Delete `.scratch/<id>/`. **Never commit or keep a solution anywhere.**
-6. Run `python tools/learn.py validate <id>` and fix every error.
+Don't write a solution. Instead, reread `task.md` against the tests once:
+- Every test checks something `task.md` asks for, with the same file names, prompts and output labels.
+- Every example run in `task.md` would pass the tests.
+- Nothing in it needs a concept that isn't allowed yet.
+
+Then run `python tools/learn.py validate <id>` and fix every error.
 
 Never edit `lesson.json`; it belongs to `learn.py`. If the plan seems wrong (for example, the brief needs a concept that isn't allowed yet), build the closest valid lesson and say so in your report.
 
-**Report back** in 3–5 lines: what the task is, your solution's line count, the expected time, and anything you changed from the brief.
+**Report back** in 2–3 lines: what the task is and anything you changed from the brief.

@@ -10,6 +10,7 @@ description: Get the current task reviewed
    - 1–2 specific things he did well.
    - The issues, most severe first. Each one gets the explanation and the hint at the level the reviewer chose. **Never the fixed code.**
    - Nits go under "for next time". He doesn't need to fix them.
+   - If the review has a `## Test problem` section, tell him it isn't his fault. Then add the problem as a line to `MAINTAINER_NOTES.md` at the repo root, with the lesson id, the test name and the reason. Create the file if it doesn't exist.
 5. Next:
    - **changes_requested**: he fixes them and runs `/review` again.
    - **approved**: ask him to explain, in his own words, the part of his code the reviewer flagged in `Explain back`. If his explanation is off, correct it gently. Then continue with `/done`.
