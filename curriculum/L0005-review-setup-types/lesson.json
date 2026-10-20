@@ -1,0 +1,31 @@
+{
+  "id": "L0005",
+  "slug": "review-setup-types",
+  "title": "Review: terminal, scripts and types",
+  "week": 1,
+  "kind": "review",
+  "concepts": {
+    "new": [],
+    "practiced": [
+      "env.terminal",
+      "env.run",
+      "py.values"
+    ]
+  },
+  "scaffold": {
+    "level": 0,
+    "provided": [],
+    "reason": "First 10 lessons of the course: everything by hand"
+  },
+  "estimate_min": 60,
+  "state": "planned",
+  "check_questions": [],
+  "reviews": [],
+  "events": [
+    {
+      "at": "2026-10-20T17:50:40+03:00",
+      "type": "planned",
+      "by": "planner"
+    }
+  ]
+}

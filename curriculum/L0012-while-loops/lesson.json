@@ -1,0 +1,33 @@
+{
+  "id": "L0012",
+  "slug": "while-loops",
+  "title": "Repeating with while loops",
+  "week": 1,
+  "kind": "regular",
+  "concepts": {
+    "new": [
+      "py.while"
+    ],
+    "practiced": [
+      "py.conditions",
+      "py.io",
+      "py.arithmetic"
+    ]
+  },
+  "scaffold": {
+    "level": 0,
+    "provided": [],
+    "reason": "No mastery data yet (all concepts count as 0) and no untaught concept needs a helper"
+  },
+  "estimate_min": 70,
+  "state": "planned",
+  "check_questions": [],
+  "reviews": [],
+  "events": [
+    {
+      "at": "2026-10-20T17:50:40+03:00",
+      "type": "planned",
+      "by": "planner"
+    }
+  ]
+}

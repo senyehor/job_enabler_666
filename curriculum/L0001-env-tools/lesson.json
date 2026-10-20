@@ -1,0 +1,29 @@
+{
+  "id": "L0001",
+  "slug": "env-tools",
+  "title": "Your tools: Python, Git, VS Code, Claude Code",
+  "week": 1,
+  "kind": "regular",
+  "concepts": {
+    "new": [
+      "env.install"
+    ],
+    "practiced": []
+  },
+  "scaffold": {
+    "level": 0,
+    "provided": [],
+    "reason": "First 10 lessons of the course: everything by hand"
+  },
+  "estimate_min": 60,
+  "state": "planned",
+  "check_questions": [],
+  "reviews": [],
+  "events": [
+    {
+      "at": "2026-10-20T17:50:40+03:00",
+      "type": "planned",
+      "by": "planner"
+    }
+  ]
+}

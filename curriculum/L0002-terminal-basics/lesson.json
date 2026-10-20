@@ -1,0 +1,31 @@
+{
+  "id": "L0002",
+  "slug": "terminal-basics",
+  "title": "Moving around in the terminal",
+  "week": 1,
+  "kind": "regular",
+  "concepts": {
+    "new": [
+      "env.terminal"
+    ],
+    "practiced": [
+      "env.install"
+    ]
+  },
+  "scaffold": {
+    "level": 0,
+    "provided": [],
+    "reason": "First 10 lessons of the course: everything by hand"
+  },
+  "estimate_min": 65,
+  "state": "planned",
+  "check_questions": [],
+  "reviews": [],
+  "events": [
+    {
+      "at": "2026-10-20T17:50:40+03:00",
+      "type": "planned",
+      "by": "planner"
+    }
+  ]
+}
