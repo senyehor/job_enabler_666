@@ -256,7 +256,8 @@ def run_tests(tests: Path, work: Path) -> dict:
     output = proc.stdout + proc.stderr
     ran_match = re.search(r"Ran (\d+) tests?", output)
     ran = int(ran_match.group(1)) if ran_match else 0
-    failed = sum(int(n) for n in re.findall(r"(?:failures|errors)=(\d+)", output))
+    # Each failing subTest is counted separately, so cap at the number of tests run.
+    failed = min(ran, sum(int(n) for n in re.findall(r"(?:failures|errors)=(\d+)", output)))
     ok = proc.returncode == 0 and ran > 0
     return {"ok": ok, "ran": ran, "passed": ran - failed, "failed": failed, "output": output}
 

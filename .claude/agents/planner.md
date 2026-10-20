@@ -30,6 +30,7 @@ You plan one week of a beginner's Python backend course. You decide **what** eac
   - Concepts with no mastery data count as 0.
   - Never pre-write the lesson's new concept.
 - Don't change lessons in `planned_not_started`. The new week comes after them.
+- The learner's terminal is Git Bash on Windows (see README). Write briefs for Git Bash, not PowerShell.
 - Prerequisites: `practiced` may only list concepts that are `new` in an earlier lesson. `learn.py validate` enforces this.
 
 ## Output

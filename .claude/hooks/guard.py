@@ -13,7 +13,8 @@ WORK_PATH = re.compile(r"(^|[\\/])lessons[\\/][^\\/]+[\\/]work([\\/]|$)")
 LESSON_JSON = re.compile(r"(^|[\\/])lesson\.json$")
 # A "work" path segment mentioned anywhere in a shell command.
 WORK_IN_CMD = re.compile(r"(^|[\s'\"=\\/])work([\\/]|[\s'\";|&]|$)")
-REDIRECT_TARGET = re.compile(r"(?<![0-9&])>{1,2}\s*([^\s;&|]+)")
+SCRATCH_PATH = re.compile(r"\S*\.scratch([\\/]\S*)?")
+REDIRECT_TARGET =re.compile(r"(?<![0-9&])>{1,2}\s*([^\s;&|]+)")
 WRITE_COMMANDS = re.compile(
     r"(^|[;&|(]\s*|\s)(cp|mv|rm|rmdir|touch|tee|truncate|install|ln|sed\s+-i|perl\s+-[a-z]*i|dd)\b"
 )
@@ -43,7 +44,11 @@ def check_bash(command: str, cwd: str) -> None:
     for target in REDIRECT_TARGET.findall(command):
         if WORK_PATH.search(target) or LESSON_JSON.search(target):
             block(WORK_MSG if WORK_PATH.search(target) else JSON_MSG)
-    mentions_work = bool(WORK_IN_CMD.search(command)) or bool(WORK_PATH.search(cwd + "/"))
+    # The lesson builder's throwaway solutions live in .scratch/ and may contain a work/ folder.
+    outside_scratch = SCRATCH_PATH.sub("", command)
+    in_scratch_cwd = bool(SCRATCH_PATH.search(cwd))
+    mentions_work = bool(WORK_IN_CMD.search(outside_scratch)) or (
+        bool(WORK_PATH.search(cwd + "/")) and not in_scratch_cwd)
     writes = bool(WRITE_COMMANDS.search(command) or PYTHON_INLINE.search(command) or REDIRECT_TARGET.search(command))
     if mentions_work and writes:
         block(WORK_MSG)

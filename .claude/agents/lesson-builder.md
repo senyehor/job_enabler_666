@@ -44,6 +44,7 @@ If `lesson.json` has `continues`, read that lesson's `task.md` and `starter/`. H
 - 4–8 tests.
 
 **`starter/`** must match `scaffold.level` and `scaffold.provided` in `lesson.json`:
+- Never name a learner file after a standard-library module (`types.py`, `random.py`, `string.py`, `math.py`, `test.py`...). It hides the real module and breaks the test runner.
 - Level 0: the empty file(s) the task names, each with a one-line comment naming the task.
 - Level 1+: as `provided` describes. Never pre-write the lesson's new concept.
 - The tests must **fail** against the starter.
