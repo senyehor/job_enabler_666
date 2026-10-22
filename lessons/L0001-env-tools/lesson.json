@@ -16,7 +16,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "task",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "You type python, then at >>> type git --version and get an error. Why, and how do you get Git's version?",
@@ -29,7 +29,27 @@
       "note": "a/c/d right. Said the Git Bash terminal runs code instead of Python; on the variant he named hello.py as an argument but not python as the program. Terminal vs interpreter role still shaky; the task's Python purpose line will practise it."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-10-22T20:36:24+03:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "env.install",
+          "type": "requirement",
+          "severity": "minor",
+          "note": "Workflow line omits running code with Python; only says code is 'written with Python'",
+          "file": "work/tools.txt",
+          "line": 19
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -51,6 +71,12 @@
     {
       "at": "2026-10-22T20:07:54+03:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-10-22T20:36:24+03:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"

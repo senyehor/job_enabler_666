@@ -1,0 +1,4 @@
+{"verdict": "approved",
+ "tests": {"passed": 8, "failed": 0},
+ "issues": [{"concept": "env.install", "type": "requirement", "severity": "minor",
+             "note": "Workflow line omits running code with Python; only says code is 'written with Python'", "file": "work/tools.txt", "line": 19}]}

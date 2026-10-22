@@ -1,1 +1,21 @@
-# Task L0001: write your four tool cards here (see task.md)
+Tool: Python
+Purpose: code interpreter that reads and executes the written code.
+Version: Python 3.14.9
+
+Tool: Git
+Purpose: Alows me to save the progress in many snapshots. 
+Version: git version 2.53.0.windows.1
+
+Tool: VS Code
+Purpose: Allows me to edit and manage my code.
+Version: 1.143.0
+2d0b7506a36c1d6db9a466440131a8e01eab2289
+x64
+
+Tool: Claude Code
+Purpose: My AI assistant that help me to analyze the code and write it correctly.
+Version: 2.1.308 (Claude Code)
+
+Workflow: I open the VS code to edit the code that I write with Python, Git helps me to save my progress into different snapshots to track down what changed and claude is pointing on mistakes and helps me to progress.
+
+Inside Python: >>> prompt means that I'm currently working on python, if I see $ that means I'm on git bash. If I'll write git --version after >>> prompt it will cause an error, because it is not written in python.
