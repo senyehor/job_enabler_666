@@ -16,7 +16,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "takeaways",
+  "state": "done",
   "check_questions": [
     {
       "q": "You type python, then at >>> type git --version and get an error. Why, and how do you get Git's version?",
@@ -77,6 +77,10 @@
       "type": "review",
       "round": 1,
       "verdict": "approved"
+    },
+    {
+      "at": "2026-10-22T23:24:56+03:00",
+      "type": "done"
     }
   ],
   "git_mode": "tutor"
