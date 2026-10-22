@@ -16,8 +16,19 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "You type python, then at >>> type git --version and get an error. Why, and how do you get Git's version?",
+      "answered_ok": true,
+      "note": "Correct: not Python code; exit() then run at $ prompt."
+    },
+    {
+      "q": "Which tool would you use to (a) edit a file, (b) run it, (c) save a snapshot, (d) ask why an error happened? Variant: in 'python hello.py', which word is the program doing the work?",
+      "answered_ok": false,
+      "note": "a/c/d right. Said the Git Bash terminal runs code instead of Python; on the variant he named hello.py as an argument but not python as the program. Terminal vs interpreter role still shaky; the task's Python purpose line will practise it."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -32,6 +43,14 @@
     {
       "at": "2026-10-22T19:54:30+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-22T20:07:54+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-22T20:07:54+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"

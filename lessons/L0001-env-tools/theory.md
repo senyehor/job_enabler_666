@@ -201,3 +201,9 @@ A: The space splits a command into words: the first word is the program, the res
 `.` is a short name for "the folder I'm in now". So `code README.md` opens a file, and `code .` opens the
 current folder (the one shown above your `$`). Without the space, `code.` is one word, and the terminal
 looks for a program called `code.`, which doesn't exist.
+
+**Q: Full answer to check question 2 (which tool for which job)?**
+A: (a) edit a file: VS Code. (b) run a Python program: Python (the interpreter); the terminal is only
+where you type the command that starts it. (c) save a snapshot: Git. (d) ask why an error happened:
+Claude Code. In `python hello.py`, `python` is the program doing the work and `hello.py` is the argument
+telling it which file to run.
