@@ -18,7 +18,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "theory",
+  "state": "check",
   "check_questions": [],
   "reviews": [],
   "events": [
@@ -30,6 +30,10 @@
     {
       "at": "2026-10-24T00:39:40+03:00",
       "type": "started"
+    },
+    {
+      "at": "2026-10-24T00:50:57+03:00",
+      "type": "theory_done"
     }
   ],
   "git_mode": "tutor"
