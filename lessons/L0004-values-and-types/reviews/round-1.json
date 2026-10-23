@@ -1,0 +1,4 @@
+{"verdict": "approved",
+ "tests": {"passed": 8, "failed": 0},
+ "issues": [{"concept": "py.values", "type": "requirement", "severity": "minor",
+             "note": "Predicted that print shows quotes around str values (\"hello\", \"10\"); these predictions are wrong but not marked or corrected", "file": "work/values.py", "line": 13}]}

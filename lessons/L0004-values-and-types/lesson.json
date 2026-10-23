@@ -19,7 +19,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "task",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "Predict: print(type(7.0)); print(type(\"7.0\")); print(int(7.0))",
@@ -37,7 +37,27 @@
       "note": "Named ValueError and the reason right away. First fix was int(4) (changed the data); with one hint about the two steps, wrote int(float(\"4.5\")) himself."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-10-23T23:07:36+03:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "py.values",
+          "type": "requirement",
+          "severity": "minor",
+          "note": "Predicted that print shows quotes around str values (\"hello\", \"10\"); these predictions are wrong but not marked or corrected",
+          "file": "work/values.py",
+          "line": 13
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -59,6 +79,12 @@
     {
       "at": "2026-10-23T22:25:15+03:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-10-23T23:07:36+03:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"
