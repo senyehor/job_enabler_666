@@ -19,8 +19,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: print(type(7.0)); print(type(\"7.0\")); print(int(7.0))",
+      "answered_ok": true,
+      "note": "Types right first try; said int(7.0) raises ValueError (mixed up with int(\"3.5\")). After re-explaining quotes=text vs float=truncate, got the int(4.0) / int(\"4.0\") variant right."
+    },
+    {
+      "q": "Predict: print(bool(\"\"), bool(\" \"), bool(0), bool(-1))",
+      "answered_ok": true,
+      "note": "All four bools right, including space and -1. Wrote 'FalseTrue' with no space between the first two items: recheck the print comma-adds-a-space rule in the task."
+    },
+    {
+      "q": "Spot the bug: print(int(\"4.5\")) crashes. Why, and how to make it print 4?",
+      "answered_ok": true,
+      "note": "Named ValueError and the reason right away. First fix was int(4) (changed the data); with one hint about the two steps, wrote int(float(\"4.5\")) himself."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -35,6 +51,14 @@
     {
       "at": "2026-10-23T22:14:45+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-23T22:25:15+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-23T22:25:15+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
