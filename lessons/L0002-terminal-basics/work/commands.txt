@@ -1,1 +1,177 @@
+absolute path in step 1 was /c/Users/ШАРП/job_enabler_666
+
 # L0002: write the commands you ran here, plus the absolute and relative paths you used (see task.md)
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666 (main)
+$ cd lessons/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons (main)
+$ ls
+L0001-env-tools/  L0002-terminal-basics/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons (main)
+$ cd L0002-terminal-basics/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics (main)
+$ ls
+lesson.json  outline.md  rubric.md  starter/  task.md  tests/  theory.md  work/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics (main)
+$ cd work/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ ls
+commands.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ pwd
+/c/Users/ШАРП/job_enabler_666/lessons/L0002-terminal-basics/work
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ mkdir projects
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ ls
+commands.txt  projects/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ cd projects/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ mkdir notes
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ mkdir scratch
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ ls
+notes/  scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd notes/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ echo "otsosat' na lili" > todo.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ echo "otsosat' na king" >> todo.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ cat todo.txt 
+otsosat' na lili
+otsosat' na king
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ cd ..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ ls
+notes/  scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ echo "labanut' Armor King'a" > ideas.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cat ideas.txt 
+labanut' Armor King'a
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ mv ideas.txt ../notes
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ ls
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cd..
+bash: cd..: command not found
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cd ..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd notes
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ ls
+ideas.txt  todo.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ cat ideas.txt 
+labanut' Armor King'a
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ cd ..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ echo "Lili r34 futanari Asuka -ai_generated" > draft.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ ls
+draft.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cat draft.txt 
+Lili r34 futanari Asuka -ai_generated
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cd ..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ echo "djaskljdasdkjkl" > junk.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ ls
+draft.txt  junk.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ rm junk.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ ls
+draft.txt
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ pmw
+bash: pmw: command not found
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ pwm
+bash: pwm: command not found
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ pwd
+/c/Users/ШАРП/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ ls /c/Users/ШАРП/job_enabler_666/lessons/L0002-terminal-basics/work/projects
+notes/  scratch/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cd..
+bash: cd..: command not found
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/scratch (main)
+$ cd ..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects (main)
+$ cd notes/
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ code .
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work/projects/notes (main)
+$ cd ../..
+
+ШАРП@DESKTOP-PLA4DIG MINGW64 ~/job_enabler_666/lessons/L0002-terminal-basics/work (main)
+$ code .
+
+absolute path example that I used: ls /c/Users/ШАРП/job_enabler_666/lessons/L0002-terminal-basics/work/projects
+Relative path that I used: mv ideas.txt ../notes

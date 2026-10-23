@@ -1,0 +1,6 @@
+{"verdict": "approved",
+ "tests": {"passed": 8, "failed": 0},
+ "issues": [
+  {"concept": "env.terminal", "type": "requirement", "severity": "minor", "note": "Line 1 labels the repo root as the pwd from step 1; pwd actually printed .../work (line 27)", "file": "work/commands.txt", "line": 1},
+  {"concept": "env.terminal", "type": "style", "severity": "nit", "note": "absolute/relative labels show whole commands, not just the path", "file": "work/commands.txt", "line": 176}
+ ]}
