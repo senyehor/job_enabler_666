@@ -8,9 +8,9 @@ print(-7, type(-7))
 print(3.14, type(3.14))
 # predict: 2.0 <class 'float'>
 print(2.0, type(2.0))
-# predict: "hello" <class 'str'>
+# predict: "hello" <class 'str'> WRONG: it printed hello <class 'str'> because quotes does not print.
 print("hello", type("hello"))
-# predict: "10" <class 'str'>
+# predict: "10" <class 'str'> WRONG: it printed 10 <class 'str'> because quotes does not print.
 print("10", type("10"))
 # predict: True <class 'bool'>
 print(True, type(True))
