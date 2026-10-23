@@ -18,8 +18,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "From /c/Users/ann/school, cd ../music then pwd: what prints?",
+      "answered_ok": true,
+      "note": "First answer /c/Users/ann (thought .. = two levels up and stopped before the last step). After the step-by-step re-explanation he got two variants right, including ../../photos from /c/Users/kim/music/rock. Watch that .. is one level and that every path piece is executed."
+    },
+    {
+      "q": "cat report.txt works in one terminal window but says No such file in another: why, and what do you run?",
+      "answered_ok": true,
+      "note": "Said: different current folder, run pwd then cd to the right place."
+    },
+    {
+      "q": "Spot the bug: echo milk > list.txt then echo eggs > list.txt shows only eggs. Why, and the fix?",
+      "answered_ok": true,
+      "note": "Said > erases, second should use >>."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -34,6 +50,14 @@
     {
       "at": "2026-10-23T03:12:55+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-23T03:41:31+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-23T03:41:31+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
