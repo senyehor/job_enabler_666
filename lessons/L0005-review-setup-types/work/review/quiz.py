@@ -4,6 +4,8 @@ print('5 + 5 ->', 5 + 5, type(5 + 5))
 print("'5' + '5' ->", '5' + '5', type('5' + '5'))
 # prediction: 8 <class 'int'>
 print('int("7") + 1 ->', int("7") + 1, type(int("7") + 1))
+# prediction: 71 <class 'str'>
+print("'7' + str(1) ->", '7' + str(1), type('7' + str(1)))
 # prediction: 2.5 <class 'float'>
 print('float("2.5") ->', float("2.5"), type(float("2.5")))
 # prediction: 9 <class 'int'>

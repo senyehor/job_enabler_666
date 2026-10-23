@@ -1,0 +1,7 @@
+{"verdict": "changes_requested",
+ "tests": {"passed": 7, "failed": 1},
+ "issues": [
+  {"concept": "env.run", "type": "requirement", "severity": "major", "note": "Still no line starting with 'Commands:' (folders now given for each command)", "file": "work/answers.txt", "line": 5},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Labels for items 2 and 4 use single quotes instead of the task's double quotes", "file": "work/review/quiz.py", "line": 4},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Trap 3 could name the empty string explicitly", "file": "work/answers.txt", "line": 4}
+ ]}
