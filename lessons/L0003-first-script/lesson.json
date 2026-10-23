@@ -19,8 +19,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "From the repo root, python hello.py says can't open file. Is the code broken? Two ways to run it?",
+      "answered_ok": true,
+      "note": "Explained Python can't find the file there. Gave absolute ~/... path and cd into work/ + python hello.py; needed a nudge to give both ways."
+    },
+    {
+      "q": "Spot the bug: print('It's sunny today'). Error name, why, fix?",
+      "answered_ok": true,
+      "note": "SyntaxError, fix with double quotes outside. Didn't spell out the why (apostrophe closes the string)."
+    },
+    {
+      "q": "Why do lines 1-2 print with a NameError on line 3 but not with a SyntaxError on line 3?",
+      "answered_ok": true,
+      "note": "First answer only named the two error types; after a hint: SyntaxError found before running starts, NameError during the run."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -35,6 +51,14 @@
     {
       "at": "2026-10-23T06:57:16+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-23T07:06:57+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-23T07:06:57+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
