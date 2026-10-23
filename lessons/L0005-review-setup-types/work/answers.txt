@@ -1,1 +1,6 @@
 # L0005 answers: write your Trap 1-3 explanations and your Commands here
+Trap 1: why "5" + "5" gives what it gives. It gives 55 because each 5 is in quotes so python sees them as str, in case of + between two str it glues them together.
+Trap 2: why int("7") + 1 works, and what would happen without int(...). It works because str 7 gets converted to int before getting added to 1. If 7 still was str than running it will cause TypeError: can only concatenate str (not "int") to str
+Trap 3: why bool("False") gives what it gives. It gives True because python is just checking if anything is present inside quotes. 
+python review/quiz.py
+python ../review/quiz.py

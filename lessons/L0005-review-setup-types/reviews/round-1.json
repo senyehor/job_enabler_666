@@ -1,0 +1,8 @@
+{"verdict": "changes_requested",
+ "tests": {"passed": 5, "failed": 3},
+ "issues": [
+  {"concept": "py.values", "type": "requirement", "severity": "major", "note": "Item 4 (\"7\" + str(1)) missing: only 7 of 8 quiz lines printed", "file": "work/review/quiz.py", "line": 6},
+  {"concept": "env.run", "type": "requirement", "severity": "major", "note": "No 'Commands:' label and no folder stated for each command", "file": "work/answers.txt", "line": 5},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Trap 1 label/expression uses '5' instead of \"5\" as in task", "file": "work/review/quiz.py", "line": 4},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Trap 3 could name the empty string explicitly", "file": "work/answers.txt", "line": 4}
+ ]}
