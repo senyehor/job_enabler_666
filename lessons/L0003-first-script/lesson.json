@@ -19,7 +19,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "task",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "From the repo root, python hello.py says can't open file. Is the code broken? Two ways to run it?",
@@ -37,7 +37,51 @@
       "note": "First answer only named the two error types; after a hint: SyntaxError found before running starts, NameError during the run."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-10-23T07:25:08+03:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "env.run",
+          "type": "requirement",
+          "severity": "minor",
+          "note": "Bottom box border (9 chars) does not match top border/middle line (16 chars)",
+          "file": "work/hello.py",
+          "line": 6
+        },
+        {
+          "concept": "env.run",
+          "type": "logic",
+          "severity": "minor",
+          "note": "NameError comment says '(detected at line 5)', which Python did not print; check he knows the number comes from the File ..., line N line",
+          "file": "work/broken.py",
+          "line": 9
+        },
+        {
+          "concept": "env.run",
+          "type": "style",
+          "severity": "nit",
+          "note": "Name line is missing the trailing full stop from the task format",
+          "file": "work/hello.py",
+          "line": 3
+        },
+        {
+          "concept": "env.run",
+          "type": "style",
+          "severity": "nit",
+          "note": "No space before closing | in middle line (acceptable)",
+          "file": "work/hello.py",
+          "line": 5
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -59,6 +103,12 @@
     {
       "at": "2026-10-23T07:06:57+03:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-10-23T07:25:08+03:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"
