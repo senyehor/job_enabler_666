@@ -18,7 +18,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "in_review",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "Predict: print(\"3\" + \"4\", int(\"3\") + 4, str(3) + \"4\")",
@@ -114,6 +114,41 @@
           "line": 4
         }
       ]
+    },
+    {
+      "round": 3,
+      "at": "2026-10-24T01:57:12+03:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "env.run",
+          "type": "style",
+          "severity": "minor",
+          "note": "Both commands and folders run together on one Commands: line, hard to tell where each command starts and ends",
+          "file": "work/answers.txt",
+          "line": 5
+        },
+        {
+          "concept": "py.values",
+          "type": "style",
+          "severity": "nit",
+          "note": "Labels for items 2 and 4 use single quotes instead of the task's double quotes",
+          "file": "work/review/quiz.py",
+          "line": 4
+        },
+        {
+          "concept": "py.values",
+          "type": "style",
+          "severity": "nit",
+          "note": "Trap 3 could name the empty string explicitly",
+          "file": "work/answers.txt",
+          "line": 4
+        }
+      ]
     }
   ],
   "events": [
@@ -149,6 +184,12 @@
       "type": "review",
       "round": 2,
       "verdict": "changes_requested"
+    },
+    {
+      "at": "2026-10-24T01:57:12+03:00",
+      "type": "review",
+      "round": 3,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"

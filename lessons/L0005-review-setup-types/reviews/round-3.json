@@ -1,0 +1,7 @@
+{"verdict": "approved",
+ "tests": {"passed": 8, "failed": 0},
+ "issues": [
+  {"concept": "env.run", "type": "style", "severity": "minor", "note": "Both commands and folders run together on one Commands: line, hard to tell where each command starts and ends", "file": "work/answers.txt", "line": 5},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Labels for items 2 and 4 use single quotes instead of the task's double quotes", "file": "work/review/quiz.py", "line": 4},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Trap 3 could name the empty string explicitly", "file": "work/answers.txt", "line": 4}
+ ]}
