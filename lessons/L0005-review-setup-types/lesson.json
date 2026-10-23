@@ -18,8 +18,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 60,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: print(\"3\" + \"4\", int(\"3\") + 4, str(3) + \"4\")",
+      "answered_ok": true,
+      "note": "Exact output with spaces right first try (fixed L0004's missing-space slip)."
+    },
+    {
+      "q": "Spot the bug: in work/notes, 'python review/quiz.py' gives Errno 2. Why, and two ways to fix?",
+      "answered_ok": true,
+      "note": "Correct reason; gave python ../review/quiz.py and cd .. then cd review then python quiz.py."
+    },
+    {
+      "q": "Explain why: print(\"7\" + 1) crashes but print(int(\"7\") + 1) works",
+      "answered_ok": true,
+      "note": "Named TypeError with full message, said Python can't choose between 8 and 71, second prints 8. Didn't spell out the convert-first step; explain-back covers it."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -34,6 +50,14 @@
     {
       "at": "2026-10-24T00:50:57+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-24T00:58:20+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-24T00:58:20+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
