@@ -1,1 +1,37 @@
 # L0006 Part 1: write the value of each variable after each line (see task.md)
+Script A:
+x = 5
+line 1: x = 5
+y = x
+line 2: x = 5, y = 5
+x = 10
+line 3: x = 10, y = 5
+print(x, y)
+A final: x = 10, y = 5
+
+Script B:
+a = "red"
+line 1: a = "red"
+b = "blue"
+line 2: a = "red", b = "blue"
+a = b
+line 3: a = "blue", b = "blue"
+b = a
+line 4: a = "blue", b = "blue"
+print(a, b)
+B final: a = "blue", b = "blue"
+Colors doesn't swap because in line 3 both values became the same. To swap properly tmp should be added in between steps 2 and 3.
+
+Script C:
+count = "3"
+line 1: count = "3"
+count = int(count)
+line 2: count = 3
+count = count + 1
+line 3: count = 4
+label = "level"
+line 4: count = 4, label = "level"
+label = label + str(count)
+line 5: count = 4, label = "level4"
+print(count, label)
+C final: count = 4, label = "level4"

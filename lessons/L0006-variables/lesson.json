@@ -19,7 +19,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "task",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "Predict: n = 2; m = n; n = n + 1; print(n, m)",
@@ -37,7 +37,51 @@
       "note": "xy xyy first try; used the updated a on line 4."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-10-24T04:23:48+03:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "py.variables",
+          "type": "requirement",
+          "severity": "minor",
+          "note": "Script B explanation states the effect (both became the same) but not the cause: line 3 overwrites a's old value 'red', so line 4 has nothing to copy back",
+          "file": "work/trace.txt",
+          "line": 23
+        },
+        {
+          "concept": "py.variables",
+          "type": "style",
+          "severity": "nit",
+          "note": "Step 3 asks for one sentence; two written, plus a grammar slip ('Colors doesn't')",
+          "file": "work/trace.txt",
+          "line": 23
+        },
+        {
+          "concept": "py.values",
+          "type": "style",
+          "severity": "nit",
+          "note": "Mixed single and double quotes for strings",
+          "file": "work/profile.py",
+          "line": 2
+        },
+        {
+          "concept": "env.run",
+          "type": "style",
+          "severity": "nit",
+          "note": "Trailing whitespace",
+          "file": "work/profile.py",
+          "line": 3
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -59,6 +103,12 @@
     {
       "at": "2026-10-24T03:12:33+03:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-10-24T04:23:48+03:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"
