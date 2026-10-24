@@ -19,8 +19,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: n = 2; m = n; n = n + 1; print(n, m)",
+      "answered_ok": true,
+      "note": "Answered 3 2 immediately (copy semantics + x = x + 1)."
+    },
+    {
+      "q": "Spot the bug: score = \"7\"; int(score); score = score + 1 crashes. Why, and one-line fix?",
+      "answered_ok": true,
+      "note": "Line 3, TypeError, score still str because int() result not stored; fix score = int(score). All first try."
+    },
+    {
+      "q": "Predict: a = \"x\"; b = \"y\"; a = a + b; b = a + b; print(a, b)",
+      "answered_ok": true,
+      "note": "xy xyy first try; used the updated a on line 4."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -35,6 +51,14 @@
     {
       "at": "2026-10-24T03:04:08+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-24T03:12:33+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-24T03:12:33+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
