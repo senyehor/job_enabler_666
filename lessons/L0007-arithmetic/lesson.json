@@ -19,8 +19,21 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: print(14 // 4, 14 % 4, 14 / 4)",
+      "answered_ok": true
+    },
+    {
+      "q": "Predict: print(2 + 2 * 2 ** 2) and print((2 + 2) * 2 ** 2)",
+      "answered_ok": true
+    },
+    {
+      "q": "Find the bug: average = 6 + 8 + 10 / 3 prints 17.33 instead of 8.0",
+      "answered_ok": true
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -44,6 +57,14 @@
     {
       "at": "2026-10-25T03:22:41+03:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-25T03:28:32+03:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-25T03:28:32+03:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
