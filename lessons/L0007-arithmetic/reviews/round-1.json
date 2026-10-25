@@ -1,0 +1,7 @@
+{"verdict": "approved",
+ "tests": {"passed": 7, "failed": 0},
+ "issues": [
+  {"concept": "py.variables", "type": "requirement", "severity": "minor", "note": "Points label hardcodes '10 weeks' instead of printing the weeks variable", "file": "work/calculator.py", "line": 38},
+  {"concept": "py.values", "type": "style", "severity": "nit", "note": "Extra 'km' after the whole km average; the task format has none", "file": "work/calculator.py", "line": 35},
+  {"concept": "py.variables", "type": "style", "severity": "nit", "note": "No comment separating Part 1 from Part 2", "file": "work/calculator.py", "line": 18}
+ ]}
