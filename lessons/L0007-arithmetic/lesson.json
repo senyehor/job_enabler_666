@@ -19,7 +19,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "takeaways",
+  "state": "done",
   "check_questions": [
     {
       "q": "Predict: print(14 // 4, 14 % 4, 14 / 4)",
@@ -107,6 +107,10 @@
       "type": "review",
       "round": 1,
       "verdict": "approved"
+    },
+    {
+      "at": "2026-10-25T03:54:26+02:00",
+      "type": "done"
     }
   ],
   "git_mode": "tutor"
