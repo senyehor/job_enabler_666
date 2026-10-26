@@ -19,8 +19,24 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 70,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: s='Python'; print(s[1], s[-2], s[1:4], s[::-1])",
+      "answered_ok": true,
+      "note": "First try gave 'ytho' for s[1:4] (included stop). After re-explaining (stop as a fence, stop-start count), got variant w='Backend' w[2:5], w[:4], w[-3:] fully right."
+    },
+    {
+      "q": "Spot the bug: print(\"Total: {price * 2:.2f}\") prints the braces literally. Why?",
+      "answered_ok": true,
+      "note": "Right first try: missing f, plain string prints braces as text; gave the correct fix."
+    },
+    {
+      "q": "Explain why: code='AB-12'; code[3:5] gives '12' but code[5] raises IndexError",
+      "answered_ok": true,
+      "note": "Correct: last index 4, slice takes positions 3 and 4, index 5 doesn't exist. Didn't state explicitly that slices never crash past the end; tutor added it."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -35,6 +51,14 @@
     {
       "at": "2026-10-26T08:49:13+02:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-10-26T09:12:21+02:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-10-26T09:12:21+02:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
