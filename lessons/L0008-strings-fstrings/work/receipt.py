@@ -13,9 +13,9 @@ order_code = "ORD-2026-0042"
 
 print(shop)
 print(f'-' * 24)
-print(f'{item1:<14} {price1:.2f} * {qty1:.2f} = {price1 * qty1:>6.2f}')
-print(f'{item2:<14} {price2:.2f} * {qty2:.2f} = {price2 * qty2:>6.2f}')
-print(f'{item3:<14} {price3:.2f} * {qty3:.2f} = {price3 * qty3:>6.2f}')
+print(f'{item1:<14} {price1:.2f} * {qty1} = {price1 * qty1:>6.2f}')
+print(f'{item2:<14} {price2:.2f} * {qty2} = {price2 * qty2:>6.2f}')
+print(f'{item3:<14} {price3:.2f} * {qty3} = {price3 * qty3:>6.2f}')
 print(f'-' * 24)
 print(f'Total: {price1 * qty1 + price2 * qty2 + price3 * qty3:>6.2f}')
 print(f'First letter: {shop[0]}')
