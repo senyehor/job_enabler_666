@@ -1,0 +1,6 @@
+{"verdict": "approved",
+ "tests": {"passed": 7, "failed": 0},
+ "issues": [
+  {"concept": "py.strings-basic", "type": "style", "severity": "nit", "note": "f prefix on strings with no {} (f'Recap', f'Each person pays: ') is unnecessary", "file": "work/tip.py", "line": 15},
+  {"concept": "py.io", "type": "style", "severity": "nit", "note": "print('') can just be print() (carried over from round 1)", "file": "work/tip.py", "line": 11}
+ ]}
