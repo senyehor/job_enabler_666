@@ -20,7 +20,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "task",
+  "state": "in_review",
   "check_questions": [
     {
       "q": "Predict: x = input('x? ') with 3, then print(x + x) and print(int(x) + int(x))",
@@ -37,7 +37,43 @@
       "note": "First try: abc right, but thought end='!' carried to the next print and that y started a new line. Got the variant (cat-dog-fish / bird) right after re-explaining. Watch end= in task req 6."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-11-04T19:36:21+02:00",
+      "verdict": "changes_requested",
+      "tests": {
+        "passed": 6,
+        "failed": 1
+      },
+      "issues": [
+        {
+          "concept": "py.io",
+          "type": "requirement",
+          "severity": "major",
+          "note": "Recap printed by a separate print with end=, so sep=' | ' doesn't separate 'Recap' from the first amount; output 'Recap: 47.60 | ...' fails the test",
+          "file": "work/tip.py",
+          "line": 15
+        },
+        {
+          "concept": "py.io",
+          "type": "requirement",
+          "severity": "major",
+          "note": "'Each person pays:' and the share come from one f-string print; req 6 needs two prints with end= on the first",
+          "file": "work/tip.py",
+          "line": 17
+        },
+        {
+          "concept": "py.io",
+          "type": "style",
+          "severity": "nit",
+          "note": "print('') can just be print()",
+          "file": "work/tip.py",
+          "line": 11
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -68,6 +104,12 @@
     {
       "at": "2026-11-04T18:58:33+02:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-11-04T19:36:21+02:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "changes_requested"
     }
   ],
   "git_mode": "tutor"

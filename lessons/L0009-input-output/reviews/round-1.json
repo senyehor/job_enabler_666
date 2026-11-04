@@ -1,0 +1,7 @@
+{"verdict": "changes_requested",
+ "tests": {"passed": 6, "failed": 1},
+ "issues": [
+  {"concept": "py.io", "type": "requirement", "severity": "major", "note": "Recap printed by a separate print with end=, so sep=' | ' doesn't separate 'Recap' from the first amount; output 'Recap: 47.60 | ...' fails the test", "file": "work/tip.py", "line": 15},
+  {"concept": "py.io", "type": "requirement", "severity": "major", "note": "'Each person pays:' and the share come from one f-string print; req 6 needs two prints with end= on the first", "file": "work/tip.py", "line": 17},
+  {"concept": "py.io", "type": "style", "severity": "nit", "note": "print('') can just be print()", "file": "work/tip.py", "line": 11}
+ ]}
