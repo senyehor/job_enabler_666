@@ -20,8 +20,23 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "check",
-  "check_questions": [],
+  "state": "task",
+  "check_questions": [
+    {
+      "q": "Predict: x = input('x? ') with 3, then print(x + x) and print(int(x) + int(x))",
+      "answered_ok": true
+    },
+    {
+      "q": "Spot the bug: price = input(...) (2.5), qty = int(input(...)) (3), print(price * qty)",
+      "answered_ok": true,
+      "note": "Diagnosis and float fix right first try. Said output was '2.5 2.5 2.5' (spaces). Wrote f'{price * qty}:.2' (spec outside braces, no f); fixed to :.2f inside braces after one prompt. Watch format-spec placement in the task."
+    },
+    {
+      "q": "Predict: print('a','b','c',sep=''); print('x',end='!'); print('y')",
+      "answered_ok": true,
+      "note": "First try: abc right, but thought end='!' carried to the next print and that y started a new line. Got the variant (cat-dog-fish / bird) right after re-explaining. Watch end= in task req 6."
+    }
+  ],
   "reviews": [],
   "events": [
     {
@@ -45,6 +60,14 @@
     {
       "at": "2026-10-30T22:28:49+02:00",
       "type": "theory_done"
+    },
+    {
+      "at": "2026-11-04T18:58:33+02:00",
+      "type": "check_done"
+    },
+    {
+      "at": "2026-11-04T18:58:33+02:00",
+      "type": "task_setup"
     }
   ],
   "git_mode": "tutor"
