@@ -1,0 +1,1 @@
+# L0010 Part 1: write the value of each variable after each line (see task.md)
