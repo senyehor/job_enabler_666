@@ -1,1 +1,18 @@
-# L0010 Part 1: write the value of each variable after each line (see task.md)
+code# L0010 Part 1: write the value of each variable after each line (see task.md)
+
+A
+line 1: total = 125
+line 2: total = 125, minutes = 2
+line 3: total = 125, minutes = 2, seconds = 5
+line 4: total = 205, minutes = 2, seconds = 5
+line 5: total = 205, minutes = 4, seconds = 5
+line 6: total = 205, minutes = 4, seconds = 5, text = '5s'
+A final: total = 205, minutes = 4, seconds = 5, text = '5s'
+
+B
+line 1: word = 'planet'
+line 2: word = 'planet', n = 6
+line 3: word = 'planet', n = 6, part = 'la'
+line 4: word = 'planet', n = 3.0, part = 'la'
+line 5: word = 'lat', n = 3.0, part = 'la'
+B final: word = 'lat', n = 3.0, part = 'la'

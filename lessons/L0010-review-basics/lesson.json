@@ -19,7 +19,7 @@
     "reason": "First 10 lessons of the course: everything by hand"
   },
   "estimate_min": 65,
-  "state": "task",
+  "state": "takeaways",
   "check_questions": [
     {
       "q": "Predict: t=75; m=t//60; s=t%60; t=m+s; print(t,m,s)",
@@ -37,7 +37,35 @@
       "note": "iv, er right; wrote 'revirr' meaning steps revir -> r (confirmed when asked). Slice stop index now correct first try."
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "round": 1,
+      "at": "2026-11-10T19:58:55+02:00",
+      "verdict": "approved",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "issues": [
+        {
+          "concept": "py.variables",
+          "type": "style",
+          "severity": "nit",
+          "note": "Stray 'code' typed before the starter comment on line 1 of trace.txt",
+          "file": "work/trace.txt",
+          "line": 1
+        },
+        {
+          "concept": "py.variables",
+          "type": "style",
+          "severity": "nit",
+          "note": "'name' next to 'last_name'; 'first_name' would read more clearly",
+          "file": "work/unit_converter.py",
+          "line": 3
+        }
+      ]
+    }
+  ],
   "events": [
     {
       "at": "2026-10-20T17:50:40+03:00",
@@ -59,6 +87,12 @@
     {
       "at": "2026-11-10T19:24:00+02:00",
       "type": "task_setup"
+    },
+    {
+      "at": "2026-11-10T19:58:55+02:00",
+      "type": "review",
+      "round": 1,
+      "verdict": "approved"
     }
   ],
   "git_mode": "tutor"
