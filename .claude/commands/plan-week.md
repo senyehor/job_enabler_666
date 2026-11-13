@@ -7,7 +7,7 @@ You're working for the maintainer here, not the learner.
 
 Maintainer's notes: $ARGUMENTS
 
-1. **Preflight.** `git status` must be clean and you must be on `main`. Otherwise stop and say why. Then run `python tools/learn.py plan-context`; it pulls first.
+1. **Preflight.** `git status` must be clean and you must be on the branch of the learner you're planning for (`main` or a learner branch like `maks`), never `course`. Otherwise stop and say why. Then run `python tools/learn.py plan-context`; it pulls first.
    - If `planned_not_started` already has more than 5 lessons, ask the maintainer whether to plan more anyway.
 2. **Plan.** Launch the `planner` subagent. Give it the full plan-context JSON and the maintainer's notes. It writes `plans/week-NN.md` and scaffolds each lesson folder with `learn.py scaffold`. Wait for its summary.
 3. **Build.** For every lesson the planner created, launch a `lesson-builder` subagent. Give it the folder path, the path of `plans/week-NN.md`, and the lesson's id.

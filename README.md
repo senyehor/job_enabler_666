@@ -15,9 +15,10 @@ A course that takes you from zero to junior Python backend developer. Each lesso
    git config --global user.email "you@example.com"
    git clone https://github.com/senyehor/job_enabler_666.git
    cd job_enabler_666
+   git switch your-branch
    claude
    ```
-   When Claude asks whether to trust the folder, say yes.
+   The maintainer tells you your branch name. Always work on your own branch. When Claude asks whether to trust the folder, say yes.
 
 ## Every lesson
 
@@ -34,6 +35,9 @@ Take the 15-minute break between lessons. Three lessons a day is the plan, but y
 To run your code: `python main.py` inside the lesson's `work/` folder. To run the tests: `python tools/learn.py test` from the course folder.
 
 ## For the maintainer
+
+- **Branches**: each learner has their own branch (`main`, `maks`). `course` holds the course with no learner progress. Make course changes on `course`, then merge it into each learner branch. Never merge one learner's branch into another.
+- **Add a learner**: `git switch -c <name> course && git push -u origin <name>`, then add them as a collaborator on GitHub.
 
 - **Plan a week**: `/plan-week`, optionally with notes like `/plan-week go slower on dicts`. It plans 15 lessons, builds and checks each one, then commits and pushes.
 - **Check progress**: `/status`, `python tools/learn.py status`, or `git log`. Every lesson step is its own commit.
